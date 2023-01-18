@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ия Котенок](https://up.htmlacademy.ru/htmlcss/36/user/2311231).
-* Наставник: Александр Карташов(https://htmlacademy.ru/profile/id77080).
+* Наставник: [Александр Карташов](https://htmlacademy.ru/profile/id77080).
 
 ---
 
