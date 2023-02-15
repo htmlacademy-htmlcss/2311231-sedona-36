@@ -14,18 +14,71 @@
     font-display: swap;
 }
 
+html{
+    height: 100%;
+}
+
+.page-main{
+    flex-grow: 1;
+}
+
 body {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 22px;
     line-height: 26px;
     background: #F2F2F2;
-  }
+    margin: 0;
+    display:flex;
+    min-height: 100%;
+}
 
 .contents {
     background: #ffffff;
     width: 1200px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  }
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content:space-around;
+}
+
+.nav-container{
+    width: 507px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items:center;
+}
+.nav-menu{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 339px;
+    justify-content: space-between;
+}
+
+.user-menu{
+    margin: 0;
+    padding: 0;
+    max-width: 300px;
+    display: flex;
+    margin-left: auto;
+    align-items:center;
+}
+
+.nav-menu-item {
+    list-style-type:none;
+}
+
+.user-menu-item{
+    list-style-type:none;
+}
 
 .nav-menu-link {
     font-weight: 700;
@@ -56,6 +109,11 @@ body {
     background-image: url(../images/background/index-background.jpg);
 }
 
+.welcome-view-image {
+    display: block;
+    margin: 0 auto;
+}
+
 .advantages {
     background: #FFFFFF;
     color: #000000;
@@ -80,6 +138,7 @@ body {
 .sedona-advantages-item {
     background: #82B3D3;
     color: #000000;
+    list-style-type:none;
 }
 
 .sedona-advantages-title {
@@ -102,6 +161,7 @@ body {
 .sedona-advantages-town-list {
     background: #FFFFFF;
     color: #000000;
+    display: flex;
 }
 
 .sedona-advantages-town-title {
@@ -123,11 +183,18 @@ body {
  .sedona-advantages-town-item {
     color: #000000;
     background: rgba(131, 179, 211, 0.12);
+    list-style-type:none;
+    width: 400px;
+    height: 385px;
  }
 
 .sedona-advantages-town-item:nth-child(2) {
     color: #000000;
     background: rgba(131, 179, 211, 0.2);
+}
+
+.company-advantages-list {
+    display: flex;
 }
 
 .company-advantages-title {
@@ -149,6 +216,7 @@ body {
 .company-advantages-item {
     color: #000000;
     background: rgba(131, 179, 211, 0.12);
+    list-style-type:none;
 }
 
 .company-advantages-item:nth-child(2) {
@@ -461,6 +529,7 @@ align-items: center;
 .page-footer {
     background: #FFFFFF;
     color: #000000;
+    width: 1200px;
 }
 
 .contact-phone-number {
@@ -471,4 +540,19 @@ align-items: center;
     text-transform: uppercase;
     text-decoration: none;
     color: #000000;
+    width: 720px;
+}
+
+.footer-container {
+    margin: 0 auto;
+    width: 1060px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials {
+    width: 142px;
+    display: flex;
+    list-style-type: none;
 }

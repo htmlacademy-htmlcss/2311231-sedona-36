@@ -7,41 +7,43 @@
   </head>
   <body>
     <div class="contents">
-      <header>
-        <a class="sedona-logo" href="index.html">
-          <img src="images/logo.svg" width="140" height="70" alt="sedona-logo">
-        </a>
-        <nav>
-          <ul class="nav-menu">
-            <li class="nav-menu-item">
-              <a class="nav-menu-link" href="index.html">Главная</a>
+      <header class="page-header">
+        <nav class="navigation">
+          <div class="nav-container">
+            <a class="sedona-logo" href="index.html">
+              <img src="images/logo.svg" width="140" height="70" alt="sedona-logo">
+            </a>
+            <ul class="nav-menu">
+              <li class="nav-menu-item">
+                <a class="nav-menu-link" href="index.html">Главная</a>
+              </li>
+              <li class="nav-menu-item">
+                <a class="nav-menu-link" href="#">О Седоне</a>
+              </li>
+              <li class="nav-menu-item">
+                <a class="nav-menu-link" href="catalog.html">Гостиницы</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="user-menu">
+            <li class="user-menu-item">
+              <a class="user-menu-link" href="#">
+                <span class="visually-hidden">Поиск</span>
+              </a>
             </li>
-            <li class="nav-menu-item">
-              <a class="nav-menu-link" href="#">О Седоне</a>
+            <li class="user-menu-item">
+              <a class="user-menu-link" href="#">
+                <span class="visually-hidden">Избранное</span>
+              </a>
+              <sup>12</sup>
             </li>
-            <li class="nav-menu-item">
-              <a class="nav-menu-link" href="catalog.html">Гостиницы</a>
+            <li class="user-menu-item">
+              <a class="user-menu-link brown-button" href="catalog.html">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
-        <ul class="user-menu">
-          <li class="user-menu-item">
-            <a class="user-menu-link" href="#">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="user-menu-item">
-            <a class="user-menu-link" href="#">
-              <span class="visually-hidden">Избранное</span>
-            </a>
-            <sup>12</sup>
-          </li>
-          <li class="user-menu-item">
-            <a class="user-menu-link brown-button" href="catalog.html">Хочу сюда!</a>
-          </li>
-        </ul>
       </header>
-      <main>
+      <main class="page-main">
         <section class="search-filter">
           <h1 class="search-filter-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
@@ -203,6 +205,7 @@
         </section>
       </main>
       <footer class="page-footer">
+        <div class="footer-container">
         <ul class="socials">
           <li class="socials-item">
             <a class="socials-link socials-link-vk"href="https://vk.com/htmlacademy">
@@ -220,10 +223,11 @@
             </a>
           </li>
         </ul>
-        <a class="contact-phone-number" href="tel:+7-812-12-12">+7 (812)-12-12</a>
+        <a class="contact-phone-number" href="tel:+7-812-12-12">+7 (812) 812-12-12</a>
         <a class="developer-link" href="https://htmlacademy.ru/">
           <span class="visually-hidden">Сделано в .html academy</span>
         </a>
+      </div>
       </footer>
     </div>
   </body>
