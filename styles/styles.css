@@ -49,7 +49,7 @@ body {
 }
 
 .nav-container{
-    max-width: 600px;
+    width: 507px;
     margin: 0;
     padding: 0;
     display: flex;
@@ -71,6 +71,7 @@ body {
     display: flex;
     margin-left: auto;
     align-items:center;
+    justify-content: flex-end;
 }
 
 .nav-menu-item {
@@ -109,7 +110,6 @@ body {
     color: #000000;
     background:#e98513;
     width: 1200px;
-    height: 485px;
     background-repeat: no-repeat;
     background-image: url(../images/background/index-background.jpg);
 }
@@ -201,7 +201,7 @@ body {
     list-style-type:none;
     width: 400px;
     margin: 0;
-    padding: 0;
+    padding: 103px 85px;;
  }
 
 .sedona-advantages-town-item:nth-child(2) {
@@ -236,7 +236,7 @@ body {
     background: rgba(131, 179, 211, 0.12);
     list-style-type:none;
     margin: 0;
-    padding: 0;
+    padding: 80px 85px;
     width: 400px;
 }
 
@@ -250,6 +250,9 @@ body {
     color: #000000;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
  }
 
 .hotel-search-container {
@@ -258,6 +261,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 592px;
 }
 
 .hotel-search-title {
@@ -341,6 +345,8 @@ body {
     font-size: 18px;
     line-height: 24px;
     background: #F2F2F2;
+    margin: 0;
+    padding: 0;
 }
 
 .subscribe-input::placeholder {
@@ -349,6 +355,8 @@ body {
     line-height: 24px;
     color: #000000;
     opacity: 0.6;
+    margin: 0;
+    padding: 0;
 }
 
 .subscribe-button.blue-button {
@@ -362,6 +370,8 @@ body {
     background: #82B3D3;
     border-radius: 0 4px 4px 0;
     border: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* catalog */
@@ -476,12 +486,21 @@ body {
     background: #FFFFFF;
     color: #000000;
     margin: 0;
-    padding: 0;
+    padding: 50px 70px 60px;
 }
 
 .search-results-container{
     width: 1060px;
     margin: 0 auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-results-right-container {
+    max-width: 522px;
+    margin: 0;
     padding: 0;
     display: flex;
     align-items: center;
@@ -509,8 +528,12 @@ body {
 
 .product-list {
     width: 1060px;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
 }
 
 .product-card {
@@ -521,6 +544,7 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+    max-width: 340px;
 }
 
 .product-card-link-image {
@@ -633,6 +657,12 @@ body {
     align-items: center;
 }
 
+.subscribe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .subscribe-title {
     font-weight: 700;
     font-size: 30px;
@@ -667,15 +697,19 @@ body {
 }
 
 .footer-container {
-    margin: 0 auto;
     width: 1060px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 40px 70px 30px;
 }
 
 .socials {
     width: 142px;
-    display: flex;
+    margin: 0;
+    padding: 0;
     list-style-type: none;
+    display: flex;
+    justify-content: space-between;
 }
