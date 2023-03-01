@@ -686,7 +686,7 @@ body {
     display: grid;
     grid-template-columns: 140px 140px;
     gap: 16px 20px;
-    grid-template-rows: 212px auto;
+    grid-template-rows: 212px 1fr auto;
 }
 
 .product-card:nth-child(3n) {
@@ -747,8 +747,11 @@ body {
     text-transform: uppercase;
     border-radius: 4px;
     border: none;
-    margin-bottom: auto;
     padding: 8px 26px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .product-card-to-favourites {
@@ -762,7 +765,6 @@ body {
     background: #82B3D3;
     border-radius: 4px;
     border:none;
-    margin-bottom: auto;
     padding: 8px 20px;
 }
 
@@ -781,7 +783,6 @@ body {
     border-radius: 4px;
     width: 140px;
     margin: 0;
-    margin-bottom: auto;
     padding-top: 9px;
     padding-bottom: 8px;
 }
