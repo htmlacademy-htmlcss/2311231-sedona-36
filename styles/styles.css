@@ -69,6 +69,7 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+
 .nav-menu {
     margin: 0;
     padding: 0;
@@ -128,6 +129,24 @@ body {
     padding: 8px 34px;
     min-height: 20px;
     margin-left: 20px;
+}
+
+.user-menu-link.brown-button:hover {
+    background: #615048;
+}
+
+.user-menu-link.brown-button:focus {
+    background: #615048;
+    outline: none;
+}
+
+.user-menu-link.brown-button:active {
+    background: #756157;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.user-menu-link.brown-button:disabled {
+    background: #E5E5E5;
 }
 
 .welcome-view {
@@ -362,6 +381,24 @@ body {
     padding: 8px 50px;
 }
 
+.hotel-search-link.brown-button:hover {
+    background: #615048;
+}
+
+.hotel-search-link.brown-button:focus {
+    background: #615048;
+    outline: none;
+}
+
+.hotel-search-link.brown-button:active {
+    background: #756157;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.hotel-search-link.brown-button:disabled {
+    background: #E5E5E5;
+}
+
 .subscribe-main {
     margin: 0;
     padding: 96px 258px 104px;
@@ -439,6 +476,23 @@ body {
     border: none;
     margin: 0;
     padding: 8px 50px;
+}
+
+.subscribe-button.blue-button:hover {
+    background: #68A2CA;
+}
+
+.subscribe-button.blue-button:focus {
+    background: #68A2CA;
+}
+
+.subscribe-button.blue-button:active {
+    background: #82B3D3;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.subscribe-button.blue-button:disabled {
+    background: #E5E5E5;
 }
 
 /* catalog */
@@ -660,6 +714,16 @@ body {
     height: 49px;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.search-results-sorting:hover {
+    border: 2px solid #68A2CA;
+}
+
+.search-results-sorting:focus {
+    border: 2px solid #68A2CA;
+    outline: none;
 }
 
 .product-list {
@@ -833,6 +897,14 @@ body {
     color: #000000;
 }
 
+.pagination-link:not(.pagination-active):hover {
+    background: #68A2CA;
+}
+
+.pagination-link:not(.pagination-active):active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .subscribe {
     color: #000000;
     background: #FFFFFF;
@@ -886,6 +958,19 @@ body {
     text-decoration: none;
     color: #000000;
     width: 720px;
+}
+
+.contact-phone-number:hover {
+    color: #756157;
+}
+
+.contact-phone-number:focus {
+    color: #756157;
+    outline: none;
+}
+
+.contact-phone-number:active {
+    color: rgba(117, 97, 87, 0.3);
 }
 
 .socials {
