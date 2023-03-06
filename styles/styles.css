@@ -68,13 +68,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .nav-menu {
     margin: 0;
     padding: 0;
     display: flex;
-    width: 339px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -83,6 +83,19 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    height: 64px;
+}
+
+.nav-menu-item:first-child {
+    margin-left:168px;
+}
+
+.sedona-logo {
+    position: absolute;
+    width: 140px;
+    height: 70px;
+    left: 0;
+    top: 0;
 }
 
 .nav-menu-link {
@@ -109,11 +122,32 @@ body {
     margin: 0;
     padding: 0;
     align-items: center;
+    position: relative;
+    height: 64px;
 }
 
 .user-menu-link {
-    display: block;
     padding: 22px 12px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fav-amount {
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+    background: #7DB54F;
+    border-radius: 50%;
+    width: 11px;
+    height: 10px;
+    left: 20px;
+    top: 11px;
+    padding: 5px;
 }
 
 .user-menu-link.brown-button {
@@ -129,6 +163,7 @@ body {
     padding: 8px 34px;
     min-height: 20px;
     margin-left: 20px;
+    margin-top: 14px;
 }
 
 .user-menu-link.brown-button:hover {
@@ -154,7 +189,7 @@ body {
     background:#e98513;
     background-repeat: no-repeat;
     background-image: url(../images/background/index-background.jpg);
-    padding: 51px 371px 25px
+    padding: 51px 371px 82px
 }
 
 .welcome-view-image {
@@ -169,6 +204,7 @@ body {
 
 .advantages-container {
     padding: 69px 0;
+    margin-bottom: 21px;
 }
 
 .advantages-main-title {
@@ -209,8 +245,8 @@ body {
 
 .sedona-advantages-container {
     width: 230px;
-    min-height: 200px; /*временное*/
-    padding: 90px 85px;
+    min-height: 180px; /*временное*/
+    padding: 102px 85px;
 }
 
 .sedona-advantages-title {
@@ -224,6 +260,17 @@ body {
     margin: 0 auto;
     padding: 0;
     margin-bottom: 62px; /*временное*/
+    position:relative;
+}
+
+.sedona-advantages-title::after {
+    content: " ";
+    position: absolute;
+    top: 86px;
+    left: 55px;
+    width: 60px;
+    height: 2px;
+    background: red;
 }
 
 .sedona-advantages-description {
@@ -302,6 +349,10 @@ body {
     padding: 0;
 }
 
+.company-advantages-image {
+    margin-bottom: 30px;
+}
+
 .company-advantages-title {
     font-weight: 700;
     font-size: 24px;
@@ -326,8 +377,10 @@ body {
     color: #000000;
     background: rgba(131, 179, 211, 0.12);
     list-style-type: none;
-    margin: 0;
     padding: 81px 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .company-advantages-item:nth-child(2) {
@@ -476,6 +529,7 @@ body {
     border: none;
     margin: 0;
     padding: 8px 50px;
+    cursor: pointer;
 }
 
 .subscribe-button.blue-button:hover {
@@ -644,6 +698,7 @@ body {
     border: none;
     text-transform: uppercase;
     margin-bottom: 32px;
+    cursor: pointer;
 }
 
 .search-filters-reset-button {
@@ -657,6 +712,7 @@ body {
     color: #FFFFFF;
     background: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .search-results {
@@ -830,6 +886,7 @@ body {
     border-radius: 4px;
     border:none;
     padding: 8px 20px;
+    cursor: pointer;
 }
 
 .product-card-to-favourites.green-button {
@@ -979,13 +1036,49 @@ body {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
+    width: 142px;
 }
 
 .socials-item {
     width: 47.33px;
     height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials-link {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    fill: #83B3D3;
+}
+
+.socials-link:hover {
+    fill: #68A2CA;
+}
+
+.socials-link:focus {
+    fill: #68A2CA;
+}
+
+.socials-link:active {
+    fill: rgba(104, 162, 202, 0.3);
 }
 
 .developer-link {
     width: 115px;
+}
+
+.developer-link:hover {
+    fill:#756157;
+}
+
+.developer-link:focus {
+    fill:#756157;
+    outline: none;
+}
+
+.developer-link:active {
+    fill:rgba(117, 97, 87, 0.3);
 }
