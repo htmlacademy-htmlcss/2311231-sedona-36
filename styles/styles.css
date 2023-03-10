@@ -582,7 +582,7 @@ body {
     padding-bottom: 11px;
 }
 
-.subscribe-input:active {
+.subscribe-input:not(:placeholder-shown):focus {
     outline: none;
     box-sizing: border-box;
     border: 2px solid #000000;
@@ -806,6 +806,11 @@ body {
     background-position: 4px 6px;
 }
 
+.search-filters-input:focus + .search-filters-input[type="checkbox"]::before {
+    border: 3px solid #83B3D3;
+    outline: none;
+}
+
 .search-filters-input[type="radio"]::before {
     position: absolute;
     content: "";
@@ -859,11 +864,8 @@ body {
 }
 
  .search-filters-label {
-    font-family: inherit;
-    font-size: 18px;
-    line-height: 23px;
-    color: #000000;
     position: relative;
+    padding: 0;
 }
 
 .filters-price-input {
@@ -873,30 +875,44 @@ body {
     line-height: 24px;
     color: #000000;
     width: 143px;
-    /* min-height: 48px; */
+    height: 48px;
     margin: 0;
     padding: 0;
+    padding-left: 20px;
+    padding-right: 42px;
     border: none;
     background: #F2F2F2;
+    display: flex;
+    align-items: center;
+}
+
+.filters-price-input:hover {
+    background: #E6E6E6;
+}
+
+.filters-price-input:not(:placeholder-shown):focus {
+    background: #F2F2F2;
+    outline: none;
+    border: 2px solid #000000;
+    padding-left: 18px;
+}
+
+.filters-price-input:focus {
+    background: #E6E6E6;
+    outline: none;
+    border: 3px solid #83B3D3;
+    padding-left: 17px;
 }
 
 .filter-min-price {
-    width: 143px;
     background: #F2F2F2;
     border-radius: 4px 0 0 4px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 20px;
     box-sizing: border-box;
 }
 
 .filter-max-price {
-    width: 143px;
     background: #F2F2F2;
     border-radius: 0 4px 4px 0;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 20px;
     box-sizing: border-box;
 }
 
@@ -905,6 +921,7 @@ body {
     font-size: 18px;
     line-height: 24px;
     position: absolute;
+    color: #000000;
     top: 12px;
     right: 20px;
     opacity: 0.3;
@@ -1340,41 +1357,42 @@ body {
 .product-card-stars {
     margin: 0;
     padding: 0;
+    font-size: 18px;
 }
 
 .one-star {
     background-image: url(/images/catalog/catalog-icons/star.svg);
     background-repeat: repeat-x;
     background-position: 0 center;
-    width: 18px;
+    width: 1em;
 }
 
 .two-star {
     background-image: url(/images/catalog/catalog-icons/star.svg);
     background-repeat: repeat-x;
     background-position: 0 center;
-    width: 36px;
+    width: 2em;
 }
 
 .three-star {
     background-image: url(/images/catalog/catalog-icons/star.svg);
     background-repeat: repeat-x;
     background-position: 0 center;
-    width: 54px;
+    width: 3em;
 }
 
 .four-star {
     background-image: url(/images/catalog/catalog-icons/star.svg);
     background-repeat: repeat-x;
     background-position: 0 center;
-    width: 72px;
+    width: 4em;
 }
 
 .five-star {
     background-image: url(/images/catalog/catalog-icons/star.svg);
     background-repeat: repeat-x;
     background-position: 0 center;
-    width: 90px;
+    width: 5em;
 }
 
 .pagination {
