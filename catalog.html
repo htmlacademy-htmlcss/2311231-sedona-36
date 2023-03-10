@@ -21,7 +21,7 @@
                 <a class="nav-menu-link" href="#">О Седоне</a>
               </li>
               <li class="nav-menu-item">
-                <a class="nav-menu-link" href="catalog.html">Гостиницы</a>
+                <a class="nav-menu-link nav-link-current" href="catalog.html">Гостиницы</a>
               </li>
             </ul>
           </div>
@@ -53,13 +53,11 @@
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">
                   <span class="visually-hidden">На Главную</span>
+                  <svg class="breadcrumbs-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none"><path fill="#fff" d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z"/><path fill="#fff" d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z"/></svg>
                 </a>
               </li>
               <li class="breadcrumbs-item">
-                <span class="visually-hidden">Стрелочка</span>
-              </li>
-              <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link">Гостиницы</a>
+                <a class="breadcrumbs-link" href="catalog.html">Гостиницы</a>
               </li>
             </ul>
           </div>
@@ -70,27 +68,27 @@
                 <fieldset class="search-filters-fieldset">
                   <legend class="search-filters-legend">Инфраструктура:</legend>
                   <div class="checkbox-container">
-                    <label class="search-filters-label">
+                    <label class="checkbox-label">
                       <input class="search-filters-input" type="checkbox" name="swimpool" checked>Бассейн
                     </label>
-                    <label class="search-filters-label">
+                    <label class="checkbox-label">
                       <input class="search-filters-input" type="checkbox" name="parking" checked>Парковка
                     </label>
-                    <label class="search-filters-label">
+                    <label class="checkbox-label">
                       <input class="search-filters-input" type="checkbox" name="wifi">Wi-Fi
                     </label>
                   </div>
                 </fieldset>
                 <fieldset class="search-filters-fieldset">
                   <legend class="search-filters-legend">Тип жилья:</legend>
-                  <div class="checkbox-container">
-                    <label class="search-filters-label">
-                      <input class="search-filters-input" type="radio" name="rent-type" value="hotel" checked>Гостинница
+                  <div class="radio-container">
+                    <label class="radio-label">
+                      <input class="search-filters-input" type="radio" name="rent-type" value="hotel" checked>Гостиница
                     </label>
-                    <label class="search-filters-label">
+                    <label class="radio-label">
                       <input class="search-filters-input" type="radio" name="rent-type" value="motel">Мотель
                     </label>
-                    <label class="search-filters-label">
+                    <label class="radio-label">
                       <input class="search-filters-input" type="radio" name="rent-type" value="appat">Апартаменты
                     </label>
                 </div>
@@ -120,22 +118,27 @@
             <h2 class="search-results-amount">Найдено гостиниц: 38 </h2>
             <div class="sorting-container">
               <select class="search-results-sorting">
-                <option value="cheap-first">Сначала дешевые</option>
+                <option value="cheap">Сначала дешевые</option>
+                <option value="popular">Сначала популярные</option>
+                <option value="expensive">Сначала дорогие</option>
               </select>
               <ul class="search-results-view">
                 <li class="search-results-view-item">
-                  <a class="search-results-view-link table-view" href="#">
+                  <a class="search-results-view-link search-results-view-current" href="#">
                     <span class="visually-hidden">Таблицей</span>
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14"><path fill="#000" d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/></svg>
                   </a>
                 </li>
                 <li class="search-results-view-item">
-                  <a class="search-results-view-link card-view" href="#">
+                  <a class="search-results-view-link" href="#">
                     <span class="visually-hidden">Большая карточка</span>
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14"><path fill="#000" d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/></svg>
                   </a>
                 </li>
                 <li class="search-results-view-item">
-                  <a class="search-results-view-link list-view" href="#">
+                  <a class="search-results-view-link" href="#">
                     <span class="visually-hidden">Списком</span>
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14"><path fill="#000" d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/></svg>
                   </a>
                 </li>
               </ul>
