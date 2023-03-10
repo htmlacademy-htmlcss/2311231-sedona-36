@@ -97,13 +97,26 @@
               <div class="filter-price-container">
                 <fieldset class="search-filters-fieldset">
                   <legend class="search-filters-legend">Стоимость, ₽:</legend>
-                  <label class="search-filters-label">
-                    <input class="search-filters-price-input" type="text" name="min-price" value="0">от
-                  </label>
-                  <label class="search-filters-label">
-                    <input class="search-filters-price-input" type="text" name="max-price" value="9000">до
-                  </label>
-                  <!-- slider to be added -->
+                  <div class="range">
+                    <div class="range-input">
+                      <label class="search-filters-label">
+                        <input class="search-filters-price-input" type="text" name="min-price" value="0">от
+                      </label>
+                      <label class="search-filters-label">
+                        <input class="search-filters-price-input" type="text" name="max-price" value="9000">до
+                      </label>
+                    </div>
+                    <div class="range-scale">
+                      <div class="range-bar">
+                        <button class="range-toggle toggle-min">
+                          <span class="visually-hidden">Изменить минимальную цену.</span>
+                        </button>
+                        <button class="range-toggle toggle-max">
+                          <span class="visually-hidden">Изменить максимальную цену.</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </fieldset>
                 <div class="filter-buttons">
                   <button class="search-filters-submit-button blue-button" type="submit">Применить</button>
