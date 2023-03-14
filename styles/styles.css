@@ -427,6 +427,7 @@ body {
 
 .company-advantages-item {
     color: #000000;
+    background: rgba(131, 179, 211, 0.12);
     list-style-type: none;
     padding: 81px 85px;
     display: flex;
@@ -441,15 +442,15 @@ body {
 }
 
 .company-advantages-living {
-    background-image: url("../images/main-page/content-icons/Advantage-icon-house.svg");
+    background-image: url("../images/main-page/content-icons/advantage-icon-house.svg");
 }
 
 .company-advantages-food {
-    background-image: url("../images/main-page/content-icons/Advantage-icon-food.svg");
+    background-image: url("../images/main-page/content-icons/advantage-icon-food.svg");
 }
 
 .company-advantages-gifts {
-    background-image: url("../images/main-page/content-icons/Advantage-icon-gift.svg");
+    background-image: url("../images/main-page/content-icons/advantage-icon-gift.svg");
 }
 
 .hotel-search {
@@ -493,6 +494,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
+    word-break: break-all;
     color: #ffffff;
     background: #756157;
     padding: 8px 50px;
@@ -622,6 +624,7 @@ body {
     line-height: 36px;
     text-align: center;
     text-transform: uppercase;
+    word-break: break-all;
     color: #ffffff;
     background: #82b3d3;
     border-radius: 0 4px 4px 0;
@@ -752,6 +755,7 @@ body {
     line-height: 24px;
     color: #ffffff;
     text-transform: capitalize;
+    word-break: break-all;
     margin-bottom: 32px;
     padding: 0;
 }
@@ -879,6 +883,7 @@ body {
     line-height: 23px;
     color: #ffffff;
     display: block;
+    word-break: break-all;
 }
 
 .filter-price-container {
@@ -1047,6 +1052,7 @@ body {
     background: #82b3d3;
     color: #ffffff;
     text-align: center;
+    word-break: break-all;
     border: none;
     text-transform: uppercase;
     margin-bottom: 32px;
@@ -1059,6 +1065,7 @@ body {
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
+    word-break: break-all;
     min-height: 36px;
     padding: 8px 50px;
     border-radius: 4px;
@@ -1286,6 +1293,7 @@ body {
     color: #333333;
     margin: 0;
     padding: 0;
+    overflow-wrap: break-word;
 }
 
 .product-rent-price {
@@ -1295,6 +1303,7 @@ body {
     margin: 0;
     padding: 0;
     justify-self: end;
+    word-break: break-all;
 }
 
 .product-more-about {
@@ -1310,6 +1319,7 @@ body {
     border-radius: 4px;
     border: none;
     padding: 8px 26px;
+    word-break: break-all;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -1342,6 +1352,7 @@ body {
     line-height: 20px;
     text-align: center;
     text-transform: uppercase;
+    word-break: break-all;
     color: #ffffff;
     background: #82b3d3;
     border-radius: 4px;
